@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Text Master App</h1>
+        <h5>Smart Text Enhancement Tool</h5>
+    </div>
+         <div class="middle">
+             <h3>Functions:</h3>
+            <button onclick="textReverse()">Text Reverse</button>
+            <button onclick="search()">Search</button>
+            <button onclick="palin()">Palindrome Checker</button>
+            <button onclick="replaceAll()">Replace all</button>
+            <button onclick="UpperCase()">Uppercase</button>
+            <button onclick="lowerCase()">Lowercase</button>
+            <button onclick="capitalize()">Capitalize</button>
+            <button onclick="countVowels()">Count Vowels</button>
+            <button onclick="charCode()">Char Code</button>
+            <button onclick="repeat()">Repeat</button>
+            <button onclick="trim()">Remove Extra Space</button>
+        </div>
+    <div class="container">
+        <div class="left">
+             <h5>Enter text:</h5>
+            <div class="input">
+                <textarea placeholder="Enter your text here.." rows="6" cols="40" id="textArea"></textarea>
+            </div>
+            <p>Character count: <span id="charCount">0</span></p>
+            <p>Word count: <span id="wordCount">0</span></p>
+        </div>
+
+        <div class="right">
+            <h5>Live Preview:</h5>
+            <div class="input">
+                <textarea placeholder="Your result will appear here.." rows="6" cols="40" id="resulttextarea"></textarea>
+            </div>
+            <div class="result">
+                <p>Character count: <span id="resultCharCount">0</span></p>
+                <p>Word count: <span id="resultWordCount">0</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="setting">
+        <button id="dark" onclick="darkMode()">dark</button> 
+        <button id="light" onclick="LightMode()">Light</button> 
+        | <button onclick="bold()"><b>Bold</b></button> |
+        <button onclick="italic()"><i>Italic</i></button> |
+        <button onclick="underline()"><u>U</u></button> |
+        <button onclick="clearText()">Clear</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
